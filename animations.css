@@ -1,0 +1,643 @@
+/* body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+img {
+    /* border: solid green; */
+}
+
+
+main {
+    margin-top: 100px;;
+    border: solid thick black;
+    width:600px;
+    height: 300px;
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: end;
+    color: white;
+    text-align: center;
+    background-image: url("https://i.pinimg.com/originals/f5/7e/f2/f57ef2ee0d54e2c0df32ea04d463acff.jpg");
+    background-size:cover;
+    /* z-index: -8; */
+}
+
+.img-box {
+    /* border: solid red; */
+    display: flex;
+    align-items: flex-end;
+    border: solid red;
+}
+
+.alien-box {
+    flex-direction: row;
+    transform: rotateY(180deg);
+    border: solid red;
+}
+
+
+
+/* --------------GOKU KEY BLAST-------------------- */
+/* GOKU FIRING KEY BLAST */
+.goku-key-blast-player {
+    animation: goku-key-blast-player 2s  forwards;
+    animation-timing-function:ease-in-out;
+    /* z-index: -1; */
+}
+
+@keyframes goku-key-blast-player {
+    0%{
+        transform: translateX(0px);
+        content: url('./sprites/goku/goku-key_blast-1.png');
+    }
+    49%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/goku/goku-key_blast-2.png');
+        /* align-self: center; */
+    }
+    50%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/goku/goku-key_blast-1.png');
+        /* align-self: flex-end; */
+    }
+    100%{
+        transform: translateX(0px);
+        content: url('./sprites/goku/goku-idle-1.png');
+        /* align-self: flex-end; */
+    }
+}
+
+/* GOKU ATTACKING */
+.goku-key-blast-projectile {
+    animation: goku-key-blast-projectile 2s  forwards;
+    animation-timing-function:ease-in-out;
+    align-self: center;
+    /* z-index: -1; */
+}
+
+@keyframes goku-key-blast-projectile {
+    0%{
+        transform: translateX(0px);
+        content: url('./sprites/goku/goku-key_blast-3.png');
+    }
+    49%{
+        transform: translateX(460px);
+        content: url('./sprites/goku/goku-key_blast-3.png');
+        align-self: center;
+    }
+    50%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-explosion-1.png');
+        align-self: flex-end;
+        
+    }
+    55%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-explosion-2.png');
+        align-self: flex-end;
+        
+    }
+    60%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-explosion-3.png');
+        align-self: flex-end;
+        
+    }
+    73%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-explosion-2.png');
+        align-self: flex-end;
+        
+    }
+    86%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-explosion-1.png');
+        align-self: flex-end;
+        
+    }
+    100%{
+        transform: translateX(460px);
+        content: url('');
+        align-self: flex-end;
+    }
+}
+
+/* FRIEZA TAKING DAMAGE */
+.frieza-taking-key-blast-damage {
+    animation: frieza-taking-key-blast-damage  2s  forwards;
+    animation-timing-function:ease-in-out;
+    align-self: center;
+    /* z-index: 0; */
+}
+
+@keyframes frieza-taking-key-blast-damage {
+    0%{
+        transform: translateX(0px);
+        content: url('./sprites/frieza/frieza-idle-1.png');
+    }
+    49%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/frieza/frieza-idle-1.png');
+        align-self: center;
+    }
+    50%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/frieza/frieza-damage-3.png');
+        align-self: flex-end;
+        
+    }
+    55%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/frieza/frieza-damage-4.png');
+        align-self: flex-end;
+        
+    }
+    60%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/frieza/frieza-damage-5.png');
+        align-self: flex-end;
+        
+    }
+    73%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/frieza/frieza-damage-6.png');
+        align-self: flex-end;
+        
+    }
+    86%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/frieza/frieza-damage-7.png');
+        align-self: flex-end;
+        
+    }
+    100%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/frieza/frieza-damage-9.png');
+        align-self: flex-end;
+    }
+}
+
+/* -------------------------FRIEZA KEY BLAST----------------------- */
+/* FRIEZA FIRING KEY BLAST */
+.frieza-key-blast-alien {
+    animation: frieza-key-blast-alien 2s  forwards;
+    animation-timing-function:ease-in-out;
+    /* z-index: -1; */
+}
+
+@keyframes frieza-key-blast-alien {
+    0%{
+        transform: translateX(0px);
+        content: url('./sprites/frieza/frieza-key_blast-1.png');
+    }
+    49%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/frieza/frieza-key_blast-2.png');
+        /* align-self: center; */
+    }
+    50%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/frieza/frieza-key_blast-1.png');
+        /* align-self: flex-end; */
+    }
+    100%{
+        transform: translateX(0px);
+        content: url('./sprites/frieza/frieza-idle-1.png');
+        /* align-self: flex-end; */
+    }
+}
+
+/* FRIEZA KEY BLAST PROJECTILE*/
+.frieza-key-blast-projectile {
+    animation: frieza-key-blast-projectile 2s  forwards;
+    animation-timing-function:ease-in-out;
+    align-self: center;
+    /* z-index: -1; */
+}
+
+@keyframes frieza-key-blast-projectile {
+    0%{
+        transform: translateX(0px);
+        content: url('./sprites/frieza/frieza-key_blast-3.png');
+    }
+    49%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-key_blast-3.png');
+        align-self: center;
+    }
+    50%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-explosion-1.png');
+        align-self: flex-end;
+        
+    }
+    55%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-explosion-2.png');
+        align-self: flex-end;
+        
+    }
+    60%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-explosion-3.png');
+        align-self: flex-end;
+        
+    }
+    73%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-explosion-2.png');
+        align-self: flex-end;
+        
+    }
+    86%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-explosion-1.png');
+        align-self: flex-end;
+        
+    }
+    100%{
+        transform: translateX(460px);
+        content: url('');
+        align-self: flex-end;
+    }
+}
+
+/* GOKU TAKING DAMAGE */
+.goku-taking-key-blast-damage {
+    animation: goku-taking-key-blast-damage  2s  forwards;
+    animation-timing-function:ease-in-out;
+    align-self: center;
+    /* z-index: 0; */
+}
+
+@keyframes goku-taking-key-blast-damage {
+    0%{
+        transform: translateX(0px);
+        content: url('./sprites/goku/goku-idle-1.png');
+    }
+    49%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/goku/goku-idle-1.png');
+        align-self: center;
+    }
+    50%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/goku/goku-damage-3.png');
+        align-self: flex-end;
+        
+    }
+    55%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/goku/goku-damage-4.png');
+        align-self: flex-end;
+        
+    }
+    60%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/goku/goku-damage-5.png');
+        align-self: flex-end;
+        
+    }
+    73%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/goku/goku-damage-6.png');
+        align-self: flex-end;
+        
+    }
+    86%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/goku/goku-damage-7.png');
+        align-self: flex-end;
+        
+    }
+    100%{
+        /* transform: translateX(460px); */
+        content: url('./sprites/goku/goku-damage-7.png');
+        align-self: flex-end;
+    }
+}
+
+
+/* -----------------------GOKU PUNCH------------------ */
+/* PLAYER FLYING OVER */
+.goku-punch-player {
+    animation: goku-punch-player 3s forwards;
+    animation-timing-function: linear;
+    /* z-index: 1; */
+}
+
+@keyframes goku-punch-player {
+    0%{
+        transform: translateX(0px) rotateZ(0deg);
+        content: url('./sprites/goku/goku-idle-3.png');
+    }
+    25%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/goku/goku-idle-3.png');
+    }
+    40%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/goku/goku-punch-1.png');
+    }
+    50%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/goku/goku-punch-2.png');
+    }
+    60%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/goku/goku-punch-3.png');
+    }
+    70%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/goku/goku-punch-2.png');
+    }
+    80%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/goku/goku-punch-3.png');
+    }
+    90%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/goku/goku-punch-2.png');
+    }
+    0%{
+        transform: translateX(0px) rotateZ(0deg);
+        content: url('./sprites/goku/goku-idle-3.png');
+    }
+}
+
+
+/* PROJECTILE FOLLOWING */
+.goku-punch-projectile {
+    animation: goku-punch-projectile 3s forwards;
+    animation-timing-function: linear;
+    /* z-index: 1; */
+    align-self: center;
+    opacity: 70%;
+}
+
+@keyframes goku-punch-projectile {
+    0%{
+        transform: translateX(0px) rotateZ(0deg);
+        content: url('');
+    }
+    25%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('');
+    }
+    40%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/frieza/frieza-key_blast-4.png');
+    }
+    50%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/frieza/frieza-key_blast-5.png');
+    }
+    60%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/frieza/frieza-key_blast-4.png');
+    }
+    70%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/frieza/frieza-key_blast-5.png');
+    }
+    80%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/frieza/frieza-key_blast-4.png');
+    }
+    90%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('');
+    }
+    0%{
+        transform: translateX(0px) rotateZ(0deg);
+        content: url('');
+    }
+}
+
+/* FRIEZA TAKING PUNCH DAMAGE */
+.frieza-punch-damage {
+    animation: frieza-punch-damage 3s forwards;
+    animation-timing-function: linear;
+    /* z-index: 0; */
+}
+
+@keyframes frieza-punch-damage {
+    0%{
+        /* transform: translateX(0px); */
+        content: url('./sprites/frieza/frieza-idle-1.png');
+    }
+    25%{
+        /* transform: translateX(0px); */
+        content: url('./sprites/frieza/frieza-idle-1.png');
+    }
+    40%{
+        /* transform: translateX(0px);; */
+        content: url('./sprites/frieza/frieza-damage-1.png');
+    }
+    50%{
+        /* transform: translateX(460px) rotateZ(10deg); */
+        content: url('./sprites/frieza/frieza-damage-2.png');
+    }
+    60%{
+        /* transform: translateX(460px) rotateZ(10deg); */
+        content: url('./sprites/frieza/frieza-damage-3.png');
+    }
+    70%{
+        /* transform: translateX(460px) rotateZ(10deg); */
+        content: url('./sprites/frieza/frieza-damage-1.png');
+    }
+    80%{
+        /* transform: translateX(460px) rotateZ(10deg); */
+        content: url('./sprites/frieza/frieza-damage-2.png');
+    }
+    90%{
+        /* transform: translateX(460px) rotateZ(10deg); */
+        content: url('./sprites/frieza/frieza-damage-3.png');
+    }
+    100%{
+        /* transform: translateX(0px) rotateZ(0deg); */
+        content: url('./sprites/frieza/frieza-damage-1.png');
+    }
+}
+
+
+/* ---------------------FRIEZA WHIP---------------------- */
+/* ALIEN FLYING OVER */
+.frieza-whip-alien {
+    animation: frieza-whip-alien 3s forwards;
+    animation-timing-function: linear;
+    /* z-index: 1; */
+}
+
+@keyframes frieza-whip-alien {
+    0%{
+        transform: translateX(0px);
+        content: url('./sprites/frieza/frieza-walk-1.png');
+    }
+    5%{
+        transform: translateX(92px);
+        content: url('./sprites/frieza/frieza-walk-2.png');
+    }
+    10%{
+        transform: translateX(184px);
+        content: url('./sprites/frieza/frieza-walk-3.png');
+    }
+    15%{
+        transform: translateX(276px);
+        content: url('./sprites/frieza/frieza-walk-4.png');
+    }
+    20%{
+        transform: translateX(368px);
+        content: url('./sprites/frieza/frieza-walk-5.png');
+    }
+    25%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-walk-6.png');
+    }
+    40%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-tail_whip-2.png');
+    }
+    50%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-tail_whip-3.png');
+    }
+    60%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-tail_whip-2.png');
+    }
+    70%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-tail_whip-3.png');
+    }
+    80%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-tail_whip-2.png');
+    }
+    90%{
+        transform: translateX(460px);
+        content: url('./sprites/frieza/frieza-tail_whip-3.png');
+    }
+    100%{
+        transform: translateX(0px);
+        content: url('./sprites/frieza/frieza-walk-1.png');
+    }
+}
+
+/* PROJECTILE FOLLOWING */
+.frieza-whip-projectile {
+    animation: frieza-whip-projectile 3s forwards;
+    animation-timing-function: linear;
+    /* z-index: 2; */
+    align-self: center;
+    opacity: 70%;
+}
+
+@keyframes frieza-whip-projectile {
+    0%{
+        transform: translateX(0px) rotateZ(0deg);
+        content: url('');
+    }
+    25%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('');
+    }
+    40%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/frieza/frieza-key_blast-4.png');
+    }
+    50%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/frieza/frieza-key_blast-5.png');
+    }
+    60%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/frieza/frieza-key_blast-4.png');
+    }
+    70%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/frieza/frieza-key_blast-5.png');
+    }
+    80%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('./sprites/frieza/frieza-key_blast-4.png');
+    }
+    90%{
+        transform: translateX(460px) rotateZ(10deg);
+        content: url('');
+    }
+    0%{
+        transform: translateX(0px) rotateZ(0deg);
+        content: url('');
+    }
+}
+
+/* GOKU TAKING PUNCH DAMAGE */
+.goku-punch-damage {
+    animation: goku-punch-damage 3s forwards;
+    animation-timing-function: linear;
+    /* z-index: 0; */
+}
+
+@keyframes goku-punch-damage {
+    0%{
+        /* transform: translateX(0px); */
+        content: url('./sprites/goku/goku-idle-1.png');
+    }
+    25%{
+        /* transform: translateX(0px); */
+        content: url('./sprites/goku/goku-idle-1.png');
+    }
+    40%{
+        /* transform: translateX(0px);; */
+        content: url('./sprites/goku/goku-damage-1.png');
+    }
+    50%{
+        /* transform: translateX(460px) rotateZ(10deg); */
+        content: url('./sprites/goku/goku-damage-2.png');
+    }
+    60%{
+        /* transform: translateX(460px) rotateZ(10deg); */
+        content: url('./sprites/goku/goku-damage-3.png');
+    }
+    70%{
+        /* transform: translateX(460px) rotateZ(10deg); */
+        content: url('./sprites/goku/goku-damage-1.png');
+    }
+    80%{
+        /* transform: translateX(460px) rotateZ(10deg); */
+        content: url('./sprites/goku/goku-damage-2.png');
+    }
+    90%{
+        /* transform: translateX(460px) rotateZ(10deg); */
+        content: url('./sprites/goku/goku-damage-3.png');
+    }
+    100%{
+        /* transform: translateX(0px) rotateZ(0deg); */
+        content: url('./sprites/goku/goku-damage-1.png');
+    }
+}
+
+
+/* ---------------GOKU POWER AURA FOR SHIELD----------------- */
+.goku-shield {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f18ddbba-4acf-46e1-8a44-9f48b5d9f91a/de6po3q-3a803f17-4a51-43f9-bd28-6e96aaf148dd.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2YxOGRkYmJhLTRhY2YtNDZlMS04YTQ0LTlmNDhiNWQ5ZjkxYVwvZGU2cG8zcS0zYTgwM2YxNy00YTUxLTQzZjktYmQyOC02ZTk2YWFmMTQ4ZGQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.t12DrG8Ubi8XDF2pwW9DUQLUG-oJmAOBNPirQN9VFhk");
+    background-size: 170%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* .goku-shield-1 {
+    animation: goku-shield 2s forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes goku-shield {
+    0%{
+        content-visibility: ;
+    }
+} */

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Save The Galaxy</title>
+  </head>
+  <body>
+    <nav>
+      <img src="https://1000logos.net/wp-content/uploads/2022/02/Dragon-Ball-Logo.png" alt="" class="logo">
+      <h1><span style="color: gold">SAVE</span> <span style="color: red">THE GALAXY</span></h1>
+    </nav>
+
+    <main>
+      <div class="img-box player-box">
+        <img src="" alt="" class="player-img" />
+        <img src="" alt="" class="player-projectile" />
+      </div>
+
+      <div class="img-box alien-box">
+        <img src="" alt="" class="alien-img" />
+        <img src="" alt="" class="alien-projectile" />
+      </div>
+    </main>
+
+    <aside>
+      <div class="player">
+        <h1>GOKU</h1>
+        <button class="actions-menu">MENU</button>
+        <div class="actions">
+          <button class="attack" onclick="player.attack()">ATTACK</button>
+          <button class="retreat" onclick="player.retreat()" disabled>
+            RETREAT
+          </button>
+          <button class="shield" onclick="player.shield()">SHIELD</button>
+          <button class="bomb" onclick="player.bomb()">BOMB</button>
+        </div>
+        <div class="stats">
+          <p class="stats-info">
+            <strong>HEALTH: </strong><span class="player-hull"></span> <br />
+            <strong>FIREPOWER: </strong><span class="player-firepower"></span
+            ><br />
+            <strong>ACCURACY: </strong><span class="player-accuracy"></span
+            ><br />
+          </p>
+        </div>
+      </div>
+
+      <div class="middle-console">
+        <button class="next-turn" onclick="nextTurn()" disabled>
+          NEXT TURN
+        </button>
+
+        <h3 class="turn-info">
+          FRIEZA HAS CLONED HIMSELF AND WE NEED TO DEFEAT ALL THE CLONES TO SAVE
+          THE EARTH
+        </h3>
+
+        <button class="refresh" onclick="location.reload()">REFRESH</button>
+      </div>
+
+      <div class="alien">
+        <h1>FRIEZA</h1>
+        <h2></h2>
+        <!-- <button class="attack" onclick="alien.attack()">ATTACK</button> -->
+        <div class="stats">
+          <p>
+            <strong>HEALTH: </strong><span class="alien-hull"></span><br />
+            <strong>FIREPOWER: </strong><span class="alien-firepower"></span
+            ><br />
+            <strong>ACCURACY: </strong><span class="alien-accuracy"></span>
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <script src="app.js"></script>
+  </body>
+</html>

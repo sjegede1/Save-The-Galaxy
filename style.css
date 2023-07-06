@@ -1,0 +1,169 @@
+@import "animations.css";
+@font-face {
+    font-family: Dragon-Ball-Z;
+    src: url(./font/Saiyan-Sans.ttf);
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://t4.ftcdn.net/jpg/01/94/43/77/360_F_194437706_Bt2GbkOfdUhXvgaU1fnxRmDFUydbfsRg.jpg');
+    /* background-color: rgba(50,110,255,100); */
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color:goldenrod;
+    justify-content: center;
+    align-items: center;
+    font-family: Dragon-Ball-Z;
+    font-size: 3em;
+}
+
+nav img {
+    height: 50%;
+    margin: 20px;
+}
+
+nav h1 {
+    margin-inline: auto;
+}
+
+/* main {
+    margin-top: 100px;;
+    border: solid thick black;
+    width:650px;
+    height: 325px;
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: end;
+    color: white;
+    text-align: center;
+    background-image: url("https://i.pinimg.com/originals/f5/7e/f2/f57ef2ee0d54e2c0df32ea04d463acff.jpg");
+    background-size:cover;
+} */
+
+.player-projectile, .alien-projectile {
+    border: solid blue;
+}
+
+.player-img {
+    content: url('./sprites/goku/goku-idle-1.png');
+    border: solid black;
+}
+
+.alien-img {
+    content: url('./sprites/frieza/frieza-idle-1.png');
+    border-radius: 500px;
+    border: solid black;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    background-color: orangered;
+    width: 200px;
+    height: 90%;
+        justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 30px;
+}
+
+.alien {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 200px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 30px;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:5px;
+}
+
+.actions button {
+    margin: 3px;
+}
+
+.hidden {
+    display: none;
+}
+
+aside {
+    /* border: solid red; */
+    margin: 50px;
+    width: 800px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player h1, .alien h1 {
+    font-family: Dragon-Ball-Z;
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin: 10px;
+}
+
+.player h1 {
+    color: gold;
+}
+
+.alien h1 {
+    color: red
+}
+
+.alien h2 {
+    color: red;
+    font-family: Dragon-Ball-Z;
+    font-size: 2em;
+    margin: 10px;
+}
+
+aside button {
+    background-color: antiquewhite;
+    font-size: 1.5em;
+    font-family: Dragon-Ball-Z;
+}
+
+.middle-console {
+    width: 300px;
+    /* border: solid blue; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.middle-console h3 {
+    text-align: center;
+    margin: 10px;
+    background-color:black;
+    border-radius: 500px ;
+    padding: 30px;
+    color: lime;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 0.5em;
+    font-size: 1.5em;
+}
