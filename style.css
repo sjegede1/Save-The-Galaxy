@@ -50,12 +50,12 @@ nav h1 {
 } */
 
 .player-projectile, .alien-projectile {
-    border: solid blue;
+    /* border: solid blue; */
 }
 
 .player-img {
     content: url('./sprites/goku/goku-idle-1.png');
-    border: solid black;
+    /* border: solid black; */
 }
 
 .alien-img {
