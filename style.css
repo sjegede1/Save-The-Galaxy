@@ -61,7 +61,7 @@ nav h1 {
 .alien-img {
     content: url('./sprites/frieza/frieza-idle-1.png');
     border-radius: 500px;
-    border: solid black;
+    /* border: solid black; */
 }
 
 .player {
