@@ -30,13 +30,13 @@ main {
     /* border: solid red; */
     display: flex;
     align-items: flex-end;
-    border: solid red;
+    /* border: solid red; */
 }
 
 .alien-box {
     flex-direction: row;
     transform: rotateY(180deg);
-    border: solid red;
+    /* border: solid red; */
 }
 
 
